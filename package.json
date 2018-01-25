@@ -1,17 +1,17 @@
 {
-  "name": "sortinator2",
+  "name": "Sortinator Deux",
   "version": "1.0.0",
   "description": "Tinker Toy Futzing Proj for Tim+John",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/r-i-c-h/tinkertoy-SortinatorDeux.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "r-i-c-h",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/r-i-c-h/tinkertoy-SortinatorDeux/issues"
@@ -19,5 +19,12 @@
   "homepage": "https://github.com/r-i-c-h/tinkertoy-SortinatorDeux#readme",
   "dependencies": {
     "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "jest": "^22.1.4",
+    "morgan": "^1.9.0"
+  },
+  "jest":{
+    "testEnvironment": "node"
   }
 }
