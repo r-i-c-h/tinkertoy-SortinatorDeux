@@ -27,7 +27,8 @@ body {
 
 heading {
   font-weight: bold;
-  font-size: 2em;
+  font-family: 'Fontdiner Swanky', cursive;
+  font-size: 3em;
 }
 
 .top-box {
@@ -42,16 +43,15 @@ heading {
 
 fieldset {
   margin: 0;
-  padding: 0;
   border: none;
   width: 80vw;
-  padding: 0.25rem;
+  padding: 0.5rem;
   /* flex-flow: row nowrap; */
   justify-content: flex-start;
   font-weight:bold;
 }
 input[type=text]{
-  border: 1px solide black;
+  border: 1px solid black;
   border-radius: 3px;
   font-size: 1rem;
   line-height: 1.2rem;
@@ -61,7 +61,7 @@ input[type=text]{
 }
 
 .outputBox {
-  display: none;
+  display: flex;
   margin: auto;
 }
 
