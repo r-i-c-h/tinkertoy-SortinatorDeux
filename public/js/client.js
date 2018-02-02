@@ -6,7 +6,6 @@ const handleFormClick = e => {
   e.stopPropagation();
   const data = { 'str': form.elements.words.value };
   fetchyFetch(data);
-  form.elements.words.value = '';
 };
 
 const fetchyFetch = (data) => {
@@ -19,6 +18,7 @@ const fetchyFetch = (data) => {
   fetch(url, optionsObj)
   .then( res => res.json() )
   .then( data => {
+    form.elements.words.value = '';
     displayResults(data);
   })
   .catch( err => console.error(err));
@@ -26,6 +26,6 @@ const fetchyFetch = (data) => {
 
 const displayResults = (data) => {
   console.log(data);
-}
+};
 
 form.addEventListener('submit', e => handleFormClick(e), false);
